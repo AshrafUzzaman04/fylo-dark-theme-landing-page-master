@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+}
+main {
+  > header {
+    background-image: url("/images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-color: #1b2330;
+
+    // navbar style
+    > nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      vertical-align: baseline;
+
+      > img {
+        cursor: pointer;
+      }
+      > ul {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        > li {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > a {
+            text-decoration: none;
+            color: #d4dbe3;
+            font-size: 20px;
+            transition: 0.5s ease-in-out;
+            &:hover {
+              color: #fff;
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    // intro section
+    > section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      > div {
+        width: 700px;
+        text-align: center;
+        color: #fff;
+        > h1 {
+          line-height: 40px;
+        }
+        > p {
+          line-height: 26px;
+          font-size: 17px;
+        }
+        > button {
+          padding: 12px 90px;
+          border-radius: 40px;
+          cursor: pointer;
+          font-weight: 500;
+          background-color: #4fc4d3;
+          transition: 0.5s ease-in-out;
+          color: white;
+          margin-bottom: 60px;
+          border: none;
+
+          &:hover {
+            background-color: #8cdae4;
+          }
+        }
+      }
+    }
+  }
+
+  //   feature section
+  > section {
+    background-color: #171f2a;
+    > .row {
+      > div {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  main {
+    > header {
+      background-image: url("/images/bg-curvy-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+
+      // navbar style
+      > nav {
+        > img {
+          width: 100px;
+        }
+
+        > ul {
+          > li {
+            > a {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
