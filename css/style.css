@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +8,19 @@
 
 body {
   color: #fff;
+  font-family: "Open Sans", sans-serif;
 }
 
+main {
+  background-color: #171f2a;
+}
 main > header {
   background-image: url("/images/bg-curvy-desktop.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
   background-color: #1b2330;
+  font-family: "Raleway", sans-serif;
 }
 main > header > nav {
   display: flex;
@@ -39,7 +46,7 @@ main > header > nav > ul > li {
 main > header > nav > ul > li > a {
   text-decoration: none;
   color: #d4dbe3;
-  font-size: 20px;
+  font-size: 18px;
   transition: 0.5s ease-in-out;
 }
 main > header > nav > ul > li > a:hover {
@@ -70,20 +77,275 @@ main > header > section > div > button {
   border-radius: 40px;
   cursor: pointer;
   font-weight: 500;
-  background-color: #4fc4d3;
+  background-image: linear-gradient(to right, #4fc6d3, #3db0ce);
   transition: 0.5s ease-in-out;
   color: white;
   margin-bottom: 60px;
   border: none;
+  transition: 0.5s ease-in-out;
 }
 main > header > section > div > button:hover {
-  background-color: #8cdae4;
+  background-image: linear-gradient(to right, #8cdae4, #48c3e2);
 }
-main > section {
+main > #features {
   background-color: #171f2a;
 }
-main > section > .row > div {
+main > #features > .row > div {
   color: #fff;
+}
+main > #features > .row > div > h5 {
+  margin: 22px 0px 12px;
+  font-family: "Raleway", sans-serif;
+}
+main > #features > .row > div > p {
+  opacity: 76%;
+  font-size: 15px;
+  font-weight: 400;
+}
+main > .productive {
+  background-color: #171f2a;
+  color: #fff;
+}
+main > .productive > .row > :nth-child(1) {
+  margin: auto;
+  text-align: center;
+}
+main > .productive > .row > :nth-child(2) {
+  margin: auto;
+}
+main > .productive > .row > :nth-child(2) > h2 {
+  font-size: 2.5rem;
+}
+main > .productive > .row > :nth-child(2) > p {
+  font-size: 18px;
+  opacity: 78%;
+  padding-left: 0 !important;
+}
+main > .productive > .row > :nth-child(2) > a {
+  margin-top: 10px;
+  color: #6de4dc;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+main > .productive > .row > :nth-child(2) > a > ion-icon {
+  margin-left: 10px;
+}
+main > .productive > .row > :nth-child(2) > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+main > #team {
+  background-color: #171f2a;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1600px;
+  background-image: url("/images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 18px 12px;
+}
+main > #team > .card {
+  background-color: #21293c;
+  color: #fff;
+}
+main > #team > .card > .card-body > p {
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 90%;
+}
+main > #team > .card > .card-body > div > .img-div {
+  display: inline-block;
+}
+main > #team > .card > .card-body > div > .img-div > img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline;
+}
+main > #team > .card > .card-body > div > .text {
+  display: inline-flex;
+  flex-direction: column;
+  transform: translateY(-8px);
+  margin-left: 12px;
+}
+main > #team > .card > .card-body > div > .text > .span1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+main > #team > .card > .card-body > div > .text > .span2 {
+  font-size: 11px;
+  opacity: 60%;
+}
+main > .earlyAccess {
+  color: #fff;
+  transform: translateY(124px);
+  max-width: 1000px;
+}
+main > .earlyAccess > div {
+  background-color: #1b2330;
+  border-radius: 10px;
+  box-shadow: 10px 10px 25px -5px black;
+  padding: 40px 60px;
+}
+main > .earlyAccess > div > :nth-child(1) > h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+main > .earlyAccess > div > :nth-child(1) > p {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 80%;
+  line-height: 26px;
+}
+main > .earlyAccess > div > :nth-child(2) > form > .email {
+  padding: 12px 32px;
+  border-radius: 40px;
+  border: none;
+  outline: 0;
+  color: black;
+}
+main > .earlyAccess > div > :nth-child(2) > form > .email::-moz-placeholder {
+  color: rgb(180, 180, 180);
+}
+main > .earlyAccess > div > :nth-child(2) > form > .email:-ms-input-placeholder {
+  color: rgb(180, 180, 180);
+}
+main > .earlyAccess > div > :nth-child(2) > form > .email::placeholder {
+  color: rgb(180, 180, 180);
+}
+main > .earlyAccess > div > :nth-child(2) > form > .submit {
+  margin-left: 16px;
+  padding: 12px 30px;
+  border-radius: 40px;
+  border: none;
+  background-image: linear-gradient(to right, #4fc6d3, #3db0ce);
+  color: white;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+}
+main > .earlyAccess > div > :nth-child(2) > form > .submit:hover {
+  background-image: linear-gradient(to right, #8cdae4, #48c3e2);
+}
+main > footer {
+  background-color: #0c1524;
+  color: #fff;
+}
+main > footer > .icon {
+  margin: 140px 0px 40px;
+}
+main > footer > .icon > img {
+  width: 150px;
+  cursor: pointer;
+}
+main > footer > .flex {
+  display: flex;
+}
+main > footer > .flex > :nth-child(1) {
+  display: flex;
+}
+main > footer > .flex > :nth-child(1) > i {
+  transform: translateY(7px);
+}
+main > footer > .flex > :nth-child(1) > p {
+  font-size: 16px;
+  opacity: 88%;
+  font-weight: 400;
+  margin-left: 22px;
+}
+main > footer > .flex > :nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+main > footer > .flex > :nth-child(2) > ul > li {
+  list-style: none;
+}
+main > footer > .flex > :nth-child(2) > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 30px;
+}
+main > footer > .flex > :nth-child(2) > ul > li > a > svg {
+  margin-right: 10px;
+}
+main > footer > .flex > :nth-child(2) > ul > li > a:hover {
+  color: white;
+  opacity: 100%;
+  text-decoration: underline;
+}
+main > footer > .flex > :nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
+main > footer > .flex > :nth-child(3) > ul > li {
+  list-style: none;
+  font-weight: 500;
+}
+main > footer > .flex > :nth-child(3) > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 30px;
+}
+main > footer > .flex > :nth-child(3) > ul > li > a:hover {
+  color: white;
+  opacity: 100%;
+  text-decoration: underline;
+}
+main > footer > .flex > :nth-child(4) {
+  display: flex;
+  justify-content: center;
+}
+main > footer > .flex > :nth-child(4) > ul > li {
+  list-style: none;
+  font-weight: 500;
+}
+main > footer > .flex > :nth-child(4) > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 30px;
+}
+main > footer > .flex > :nth-child(4) > ul > li > a:hover {
+  color: white;
+  opacity: 100%;
+  text-decoration: underline;
+}
+main > footer > .flex > :nth-child(5) {
+  display: flex;
+  justify-content: center;
+}
+main > footer > .flex > :nth-child(5) > ul {
+  display: flex;
+}
+main > footer > .flex > :nth-child(5) > ul > li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+}
+main > footer > .flex > :nth-child(5) > ul > li > a {
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+main > footer > .flex > :nth-child(5) > ul > li > a:hover {
+  color: #6de4dc;
+  border: 1px solid #6de4dc;
 }
 
 @media only screen and (max-width: 576px) {
@@ -97,6 +359,91 @@ main > section > .row > div {
     width: 100px;
   }
   main > header > nav > ul > li > a {
-    font-size: 15px;
+    font-size: 13px;
+  }
+  main > #team {
+    grid-template-columns: repeat(1, 1fr);
+    background-position: 25px 6px;
+    padding: 40px !important;
+  }
+  main > .earlyAccess > div {
+    padding: 40px 20px;
+  }
+  main > .earlyAccess > div > :nth-child(2) > form > .submit {
+    margin-left: 0;
+  }
+  main > footer > .icon > img {
+    width: 120px;
+  }
+  main > footer > .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  main > footer > .flex > :nth-child(2) {
+    justify-content: start !important;
+  }
+  main > footer > .flex > :nth-child(3) {
+    justify-content: start !important;
+  }
+  main > footer > .flex > :nth-child(4) {
+    justify-content: start !important;
+  }
+  main > footer > .flex > :nth-child(5) {
+    margin: 30px 0px;
+    justify-content: center !important;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  main > #team {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "place1 place2" "place3 place3";
+    background-position: 25px 6px;
+    padding: 40px !important;
+  }
+  main > #team > :nth-child(1) {
+    grid-area: place1;
+  }
+  main > #team > :nth-child(2) {
+    grid-area: place2;
+  }
+  main > #team > :nth-child(3) {
+    grid-area: place3;
+  }
+  main > .earlyAccess > div {
+    padding: 40px 20px;
+  }
+  main > .earlyAccess > div > :nth-child(2) > form > .submit {
+    margin-left: 0;
+  }
+  main > footer > .icon > img {
+    width: 120px;
+  }
+  main > footer > .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  main > footer > .flex > :nth-child(2) {
+    justify-content: start !important;
+  }
+  main > footer > .flex > :nth-child(3) {
+    justify-content: start !important;
+  }
+  main > footer > .flex > :nth-child(4) {
+    justify-content: start !important;
+  }
+  main > footer > .flex > :nth-child(5) {
+    margin: 10px 0;
+    justify-content: center !important;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1399px) {
+  main > footer > .flex > :nth-child(3) {
+    justify-content: start !important;
+  }
+  main > footer > .flex > :nth-child(4) {
+    justify-content: start !important;
+  }
+  main > footer > .flex > :nth-child(5) {
+    justify-content: center !important;
   }
 }/*# sourceMappingURL=style.css.map */

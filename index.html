@@ -5,31 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fylo | Fylo landing page with dark theme and features grid</title>
+
+    <!-- browser icon link -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
+    <!-- manual css link -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- boostrap link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+
+    <!-- fontawesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body class="container-fluid m-0 p-0">
     <!-- started the html coding -->
-    <main>
+    <main class="m-0 p-0">
       <!-- header section started here -->
       <header class="py-4 px-4 py-md-5 p-xxl-5">
         <!-- navbar manu button and logo here -->
         <nav>
           <img src="./images/logo.svg" alt="Logo" class="img-fluid" />
           <ul>
-            <li class="px-2 px-xxl-3"><a href="">Features</a></li>
-            <li class="px-2 px-xxl-3"><a href="">Team</a></li>
+            <li class="px-2 px-xxl-3"><a href="#features">Features</a></li>
+            <li class="px-2 px-xxl-3"><a href="#team">Team</a></li>
             <li class="px-1 px-xxl-3"><a href="">Sign In</a> In</li>
           </ul>
         </nav>
@@ -57,20 +69,24 @@
       </header>
 
       <!-- features section started here -->
-      <section>
+      <section id="features">
         <div
-          class="row col-12 col-sm-10 col-md-9 col-xl-9 col-xxl-6 mx-auto text-center"
+          class="row col-12 col-sm-10 col-md-9 col-xl-9 col-xxl-8 mx-auto text-center g-2"
         >
-          <div class="col-12 col-md-6 p-xxl-5">
-            <img src="./images/icon-access-anywhere.svg" alt="" />
+          <div class="col-12 col-md-6 p-4 p-xl-5 p-xxl-5">
+            <img
+              src="./images/icon-access-anywhere.svg"
+              alt=""
+              class="img-fluid"
+            />
             <h5>Access your files, anywhere</h5>
             <p>
               The ability to use a smartphone, tablet, or computer to access
               your account means your files follow you everywhere.
             </p>
           </div>
-          <div class="col-12 col-md-6 p-xxl-5">
-            <img src="./images/icon-security.svg" alt="" />
+          <div class="col-12 col-md-6 p-4 p-xl-5 p-xxl-5">
+            <img src="./images/icon-security.svg" alt="" class="img-fluid" />
             <h5>Security you can trust</h5>
             <p>
               2-factor authentication and user-controlled encryption are just a
@@ -78,16 +94,20 @@
               files.
             </p>
           </div>
-          <div class="col-12 col-md-6 p-xxl-5">
-            <img src="./images/icon-collaboration.svg" alt="" />
+          <div class="col-12 col-md-6 p-4 p-xl-5 p-xxl-5">
+            <img
+              src="./images/icon-collaboration.svg"
+              alt=""
+              class="img-fluid"
+            />
             <h5>Real-time collaboration</h5>
             <p>
               Securely share files and folders with firends, family and
               colleagues for live collaboration. No email attachments required.
             </p>
           </div>
-          <div class="col-12 col-md-6 p-xxl-5">
-            <img src="./images/icon-any-file.svg" alt="" />
+          <div class="col-12 col-md-6 p-4 p-xl-5 p-xxl-5">
+            <img src="./images/icon-any-file.svg" alt="" class="img-fluid" />
             <h5>Store any type of file</h5>
             <p>
               whether you're sharing holidays photos or work documents, Fylo has
@@ -97,6 +117,258 @@
           </div>
         </div>
       </section>
+
+      <!-- stay productive section started here -->
+      <section class="productive py-4 px-4 py-md-5 p-xxl-5">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img
+              src="./images/illustration-stay-productive.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 py-4 py-xl-5 py-xxl-5 px-2 px-md-3 px-xxl-4"
+          >
+            <h2 class="col-12 col-md-11 col-xl-7 mb-4">
+              Stay productive, wherever you are
+            </h2>
+            <p class="pl-0 px-0 px-md-2 px-xl-5">
+              Never let loction be an issue when accessing your files. Fylo has
+              you coverd for all of your file storage needs.
+            </p>
+            <p class="pl-0 px-0 px-md-2 px-xl-5">
+              Securely share files and folders whith friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+            <a href="javascript:void(0)"
+              >See how Fylo works
+              <ion-icon name="arrow-forward-circle-sharp"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- card section of team members -->
+      <section
+        id="team"
+        class="mt-3 mt-md-4 mt-xxl-5 py-4 px-4 py-md-5 p-xxl-5 mx-auto"
+      >
+        <!-- card1 -->
+        <div class="card p-2 p-xxl-3">
+          <div class="card-body">
+            <p class="py-2">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div>
+              <div class="img-div">
+                <img src="./images/profile-1.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="text">
+                <span class="span1">Satish Patel</span>
+                <span class="span2">Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card2 -->
+        <div class="card p-2 p-xxl-3">
+          <div class="card-body">
+            <p class="py-2">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div>
+              <div class="img-div">
+                <img src="./images/profile-2.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="text">
+                <span class="span1">Bruce McKenzie</span>
+                <span class="span2">Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card3 -->
+        <div class="card p-2 p-xxl-3">
+          <div class="card-body">
+            <p class="py-2">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div>
+              <div class="img-div">
+                <img src="./images/profile-3.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="text">
+                <span class="span1">Iva Boyd</span>
+                <span class="span2">Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- get early access section -->
+      <section
+        class="earlyAccess col-10 col-sm-10 col-md-9 col-xl-7 col-xxl-6 mx-auto"
+      >
+        <div class="text-center">
+          <div>
+            <h3 class="mb-3">Get early access today</h3>
+            <p class="pt-1 pb-4">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+
+          <!-- form control x-ray here report *_* -->
+          <div>
+            <form action="" class="col-12">
+              <input
+                class="email col-12 col-xl-7"
+                type="email"
+                placeholder="email@example.com"
+              />
+              <input
+                class="submit col-12 col-md-6 col-xl-4 mt-3 mt-xl-0"
+                type="submit"
+                value="Get Started For Free"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer section started here -->
+      <footer class="py-4 px-4 py-md-5 p-xxl-5">
+        <div class="icon">
+          <img src="./images/logo.svg" alt="" class="img-fluid" />
+        </div>
+        <div class="flex row col-12">
+          <!-- location -->
+          <div class="col-10 col-md-6 col-xxl-3">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+
+          <!-- contact -->
+          <div class="col-12 col-md-6 col-xxl-3 justify-content-center">
+            <ul class="m-0 p-0">
+              <li>
+                <a href="https://wa.me/qr/24K3ZIFQ56TQF1" target="_blank"
+                  ><svg
+                    width="18"
+                    height="18"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 12A10.002 10.002 0 0 0 12 2v2a8.003 8.003 0 0 1 7.391 4.938A8 8 0 0 1 20 12h2Z"
+                    ></path>
+                    <path
+                      d="M2 10V5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H6a8 8 0 0 0 8 8v-2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5C7.373 22 2 16.627 2 10Z"
+                    ></path>
+                    <path
+                      d="M17.543 9.704A5.99 5.99 0 0 1 18 12h-1.8A4.199 4.199 0 0 0 12 7.8V6a6 6 0 0 1 5.543 3.704Z"
+                    ></path>
+                  </svg>
+                  +8801749931891</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:ashraf.uzzaman04082004@gmail.com"
+                  target="_blank"
+                  ><svg
+                    width="18"
+                    height="18"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-.67 2L12 10.75 5.67 6h12.66ZM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 1.2 0L20 7.25V17a1 1 0 0 1-1 1Z"
+                    ></path>
+                  </svg>
+                  ashraf.uzzaman04082004@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- about us -->
+          <div
+            class="col-12 col-md-4 col-xxl-2 mt-4 mt-md-5 mt-xxl-0 justify-content-center"
+          >
+            <ul class="m-0 p-0">
+              <li>About Us</li>
+              <li><a href="javascript:void(0)">Jobs</a></li>
+              <li><a href="javascript:void(0)">Press</a></li>
+              <li><a href="javascript:void(0)">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- contact us -->
+          <div
+            class="col-12 col-md-4 mt-4 mt-md-5 mt-xxl-0 col-xxl-2 justify-content-center"
+          >
+            <ul class="m-0 p-0">
+              <li>Contact Us</li>
+              <li><a href="javascript:void(0)">Terms</a></li>
+              <li><a href="javascript:void(0)">Privacy</a></li>
+            </ul>
+          </div>
+
+          <!-- social media link -->
+          <div
+            class="col-12 col-md-4 col-xxl-2 mt-md-5 mt-xxl-0 text-center mx-auto justify-content-center"
+          >
+            <ul class="p-0 m-0">
+              <li>
+                <a
+                  href="https://www.facebook.com/ashraf.uzmahim/"
+                  target="_blank"
+                  ><svg
+                    width="18"
+                    height="18"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/ashraf_uz_mahim" target="_blank"
+                  ><ion-icon name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/ashrafuzzaman04/"
+                  target="_blank"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
     <!-- boostrap js link -->
     <script
@@ -113,6 +385,16 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
+    ></script>
+
+    <!-- ionicons script linked here -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
 </html>

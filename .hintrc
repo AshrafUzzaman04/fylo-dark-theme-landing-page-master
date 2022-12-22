@@ -5,6 +5,18 @@
   "hints": {
     "disown-opener": "off",
     "highest-available-document-mode": "off",
-    "button-type": "off"
+    "button-type": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ]
   }
 }
