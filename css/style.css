@@ -66,7 +66,8 @@ main > header > section > div {
   color: #fff;
 }
 main > header > section > div > h1 {
-  line-height: 40px;
+  line-height: 48px;
+  font-weight: 600;
 }
 main > header > section > div > p {
   line-height: 26px;
@@ -361,6 +362,10 @@ main > footer > .flex > :nth-child(5) > ul > li > a:hover {
   main > header > nav > ul > li > a {
     font-size: 13px;
   }
+  main > header > section > div > h1 {
+    line-height: 40px;
+    font-weight: 600;
+  }
   main > #team {
     grid-template-columns: repeat(1, 1fr);
     background-position: 25px 6px;
@@ -394,6 +399,10 @@ main > footer > .flex > :nth-child(5) > ul > li > a:hover {
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
+  main > header > section > div > h1 {
+    line-height: 44px;
+    font-weight: 600;
+  }
   main > #team {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "place1 place2" "place3 place3";
